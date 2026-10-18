@@ -23,8 +23,8 @@ public class ServicioSocio {
 		return socioRepository.save(socio);
 	}
 	
-	public List<Socio> listar(){
-		return socioRepository.findAll();
+	public List<Socio> listar() {
+	    return socioRepository.findAll();
 	}
 	
 	public List<Socio> buscarPorEstado(boolean activo) {
