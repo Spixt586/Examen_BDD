@@ -81,7 +81,4 @@ public class Socio {
 				+ activo + "]";
 	}
 	
-	
-	
-	
 }
