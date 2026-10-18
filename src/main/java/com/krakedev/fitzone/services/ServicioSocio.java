@@ -18,13 +18,13 @@ public class ServicioSocio {
 	
 	public Socio crear(Socio socio) {
 		if(socio.getEdad() < 14) {
-			throw new IllegalArgumentException("La edad mínima permitida es14 años.");
+			throw new IllegalArgumentException("La edad mínima permitida es 14 años.");
 		}
 		return socioRepository.save(socio);
 	}
 	
-	public List<Socio> listar() {
-	    return socioRepository.findAll();
+	public List<Socio> listar(){
+		return socioRepository.findAll();
 	}
 	
 	public List<Socio> buscarPorEstado(boolean activo) {

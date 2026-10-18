@@ -31,6 +31,7 @@ public class SocioController {
 			Socio creado = servicio.crear(socio);
 			return ResponseEntity.status(HttpStatus.CREATED).body(creado);
 		} catch (Exception e) {
+			e.printStackTrace();
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al crear al Socio");
 		}
 	}
